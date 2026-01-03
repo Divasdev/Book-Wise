@@ -1,0 +1,63 @@
+.site-header {
+  padding: 1rem 0;
+}
+.site-logo{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.nav-container{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+   
+}
+
+.nav-links{
+   display: flex;
+   gap: 15px;
+  
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #555;
+  
+  
+}
+.nav-link,
+.nav-link:hover,
+.nav-link:visited,
+.nav-link:focus,
+.nav-link:active {
+  text-decoration: none;
+}
+
+
+.hero{
+  display: flex;
+  margin: 100px;
+
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 800px;
+  
+}
+
+.hero-title{
+  font-size: 40px;
+  width: 500px;
+  height: 100px;
+}
