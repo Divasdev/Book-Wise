@@ -103,9 +103,12 @@ body{
 }
 
 .hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
   background-color: #62ADD7;
   border: none;
-  padding: 11px 64px 11px 48px;
+  padding: 11px 0; /* Adjusted padding for fixed width */
   width: 220px;
   border-radius: 5px;
   color: #FFF;
@@ -248,3 +251,50 @@ section{
 .footer-icon{
   width: 32px;
 }
+
+.search-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-desc{
+   text-decoration: none;
+  font-family: "DynaPuff", system-ui;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6a6a6a;
+
+}
+
+
+.search-wrapper{
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.search-input{
+  width: 720px;
+  height: 56px;
+  padding: 0 56px 0 20px; /* space for icon */
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  font-size: 18px;
+  
+  outline: none;
+}
+
+.search-input::placeholder{
+  color: #8a8a8a;
+}
+
+.searching{
+  margin-top: 80px;
+}
+
