@@ -101,6 +101,9 @@ body{
   max-width: 420px;
    letter-spacing: 0.2px;
 }
+.hamburger {
+  display: none;
+}
 
 .hero-btn{
   display: inline-block;
@@ -571,5 +574,26 @@ section{
 @media (max-width: 600px) {
   .hero-image {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }
