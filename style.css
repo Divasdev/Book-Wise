@@ -320,3 +320,24 @@ section{
 .logo-link:active {
   text-decoration: none;
 }
+.search-btn {
+  background-color: #62ADD7;
+  border: none;
+  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #528fb2;
+}
+
+.search-btn img {
+  width: 24px;
+  height: 24px;
+}
