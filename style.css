@@ -6,6 +6,7 @@
 
 body {
   background-color: #f6f7f4;
+  overflow-x: hidden;
 }
 
 .site-header {
@@ -148,6 +149,18 @@ body {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding-top: 40px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    /* Reduced from 64px */
+    margin-bottom: 16px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 24px;
   }
 }
 
@@ -598,10 +611,15 @@ h4 {
 
   .hamburger {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: none;
     border: none;
     cursor: pointer;
+    color: #3f3f3f;
+  }
+
+  .site-logo {
+    font-size: 24px;
   }
 
   .nav-links {
