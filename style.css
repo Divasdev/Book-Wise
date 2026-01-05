@@ -94,7 +94,7 @@ body {
   font-family: "DynaPuff", system-ui;
   font-size: 18px;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
@@ -171,7 +171,7 @@ body {
 .section-title {
   text-align: center;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 
@@ -208,6 +208,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .all-books {
@@ -234,7 +235,7 @@ h4 {
 }
 
 .features-desc {
-  font-weight: 100;
+  font-weight: 400;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 

@@ -14,15 +14,17 @@ function searchBook() {
    searchingImg.style.display = "block";
    fetchBooks(bookName)
 }
-searchBtn.addEventListener("click", (event) => {
-   searchBook();
-});
-
-searchInput.addEventListener("keydown", (event) => {
-   if (event.key === "Enter") {
+if (searchBtn) {
+   searchBtn.addEventListener("click", (event) => {
       searchBook();
-   }
-})
+   });
+
+   searchInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+         searchBook();
+      }
+   })
+}
 
 
 
@@ -34,8 +36,8 @@ async function fetchBooks(query) {
 
 
    console.log(data.items);
-   if(resultsCount){
-      resultsCount.textContent=`About${data.totalItems.toLocaleString()}`
+   if (resultsCount) {
+      resultsCount.textContent = `About${data.totalItems.toLocaleString()}`
    }
 
 
@@ -92,7 +94,7 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+   navLinks.classList.toggle("active");
 });
 
 
