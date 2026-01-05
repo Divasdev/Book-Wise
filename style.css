@@ -150,6 +150,8 @@ body {
     flex-direction: column;
     text-align: center;
     padding-top: 40px;
+    margin-bottom: 40px;
+    /* Reduced spacing */
   }
 
   .hero-title {
@@ -168,8 +170,8 @@ body {
 .section-title {
   text-align: center;
   font-size: 2rem;
-  font-weight: 100;
-  font-family: "Poiret One", sans-serif;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
@@ -185,7 +187,7 @@ section {
 
 
 .reading-text {
-  font-family: "Poiret One", sans-serif;
+  font-family: "Poppins", sans-serif;
 
   font-style: normal;
   max-width: 580px;
@@ -232,8 +234,8 @@ h4 {
 
 .features-desc {
   font-weight: 100;
-  font-size: 18px;
-  font-family: "Poiret One", sans-serif;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 
 }
 
@@ -258,7 +260,7 @@ h4 {
   padding: 20px 8%;
   background-color: #3f3f3f;
   color: #f6f7f4;
-  font-family: "Poiret One", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 80px;
 }
 
@@ -428,7 +430,7 @@ h4 {
 .book-author,
 .book-publisher,
 .book-date {
-  font-family: "Poiret One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #6a6a6a;
 }
@@ -503,7 +505,7 @@ h4 {
 
 
 .book-summary p {
-  font-family: "Poiret One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   color: #6a6a6a;
   line-height: 1.5;
@@ -555,7 +557,7 @@ h4 {
 
 
 .description-text {
-  font-family: "Poiret One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #4f4f4f;
@@ -647,12 +649,21 @@ h4 {
     margin-bottom: 32px;
   }
 
+  .feature-card:nth-of-type(2) {
+    display: none;
+  }
+
   .reading-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 24px;
     margin-top: 40px;
+  }
+
+  /* Hide the second reading card on mobile */
+  .reading-card:nth-of-type(2) {
+    display: none;
   }
 
   .reading-card.reverse {
