@@ -298,3 +298,25 @@ section{
   margin-top: 80px;
 }
 
+
+.search-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-body footer {
+  margin-top: auto;
+}
+
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link:hover,
+.logo-link:visited,
+.logo-link:active {
+  text-decoration: none;
+}
